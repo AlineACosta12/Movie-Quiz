@@ -1,0 +1,226 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container style with max-width */
+#container {
+    width: 100%;
+    max-width: 1550px;
+    /* Adjust max-width as needed */
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Masthead background color */
+#masthead {
+    background-color: white;
+}
+
+/* Logo image styling */
+#logo img {
+    width: 25%;
+    height: auto;
+    text-align: center;
+}
+
+/* Main section styles */
+main {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    padding: 100px 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/blank-speech-bubble-with-comic-book-background_74563-1025.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Main section heading style */
+main h2 {
+    color: #d8ad03e1;
+    text-align: center;
+}
+
+/* Hidden class for toggling visibility */
+.hidden {
+    display: none;
+}
+
+/* Button styling */
+button {
+    background-color: #ffdd57;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #ffcc00;
+}
+
+/* Input and image-option styling */
+input,
+.image-option {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Specific styles for image options */
+.image-option {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+    border: 2px solid transparent;
+}
+
+/* Image option hover effect */
+.image-option:hover {
+    border-color: #ffdd57;
+    transform: scale(1.05);
+}
+
+/* Container for image options */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Question container styles */
+#questionContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Radio options container */
+.radio-options,
+.radio-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Shared styles for headings and labels */
+h3,
+h4,
+label,
+footer,
+footer a {
+    color: #d8ad03e1;
+}
+
+/* Footer styles */
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Link styles in the footer */
+footer a {
+    text-decoration: none;
+}
+
+/* Responsive media queries for main section */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    main {
+        padding: 60px 40px;
+        max-width: 500px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    .image-option {
+        width: 120px;
+        height: 160px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    main {
+        padding: 80px 60px;
+        max-width: 700px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+
+    .image-option {
+        width: 130px;
+        height: 180px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    main {
+        padding: 100px 80px;
+        max-width: 900px;
+    }
+
+    button {
+        padding: 12px 24px;
+    }
+
+    .image-option {
+        width: 140px;
+        height: 190px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    main {
+        padding: 120px 100px;
+        max-width: 1100px;
+    }
+
+    button {
+        padding: 14px 28px;
+    }
+
+    .image-option {
+        width: 150px;
+        height: 200px;
+    }
+}
